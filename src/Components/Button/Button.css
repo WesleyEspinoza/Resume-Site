@@ -1,0 +1,16 @@
+.ButtonContainer {
+    display: flex;
+    position: relative;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 {
+    display: flex;
+    position: relative;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}

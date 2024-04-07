@@ -1,4 +1,5 @@
 import './App.css';
+import Button from './Components/Button/Button';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
         <p>
           E. Wesley Espinoza
         </p>
+        <Button title="Resume" />
       </header>
     </div >
   );
