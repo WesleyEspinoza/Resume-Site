@@ -17,3 +17,37 @@ p {
   font-size: 75px;
   font-family: "Nanum Gothic";
 }
+
+.SocialIconGroup {
+  display: inline-flex;
+  position: relative;
+  top: 1em;
+}
+
+.Github {
+  display: flex;
+  position: relative;
+  background-image: url("./Images/Github.png");
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-style: none;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.Linkedin {
+  display: flex;
+  position: relative;
+  background-image: url("./Images/Linkedin.png");
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-style: none;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 50%;
+}
