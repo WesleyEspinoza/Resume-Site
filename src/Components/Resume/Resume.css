@@ -1,4 +1,21 @@
-.Resumecontainer {
+.PDFContainer {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+    color: black;
+    background-color: #282c34;
+}
+
+.ResumePreview {
     display: flex;
     position: relative;
+    width: 800px;
+    height: 1090px;
+    text-align: center;
+    margin: 10em auto;
+    border-style: none;
+
 }

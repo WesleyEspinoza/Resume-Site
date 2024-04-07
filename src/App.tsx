@@ -1,6 +1,7 @@
 import './App.css';
 import ButtonGroup from './Components/ButtonGroup/ButtonGroup';
 import ProfilePicture from "./Images/ProfilePicture.jpeg";
+import Resume from './Components/Resume/Resume';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           </a>
         </div>
       </header>
+      <Resume />
     </div >
   );
 }
