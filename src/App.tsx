@@ -2,6 +2,8 @@ import './App.css';
 import ButtonGroup from './Components/ButtonGroup/ButtonGroup';
 import ProfilePicture from "./Images/ProfilePicture.jpeg";
 import Resume from './Components/Resume/Resume';
+import Timeline from './Components/Timeline/Timeline';
+import Projects from './Components/Projects/Projects';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         </div>
       </header>
       <Resume />
+      <Timeline />
+      <Projects />
     </div >
   );
 }

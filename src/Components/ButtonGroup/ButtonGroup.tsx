@@ -13,7 +13,7 @@ class ButtonGroup extends React.Component<ButtonGroupProps, ButtonGroupState> {
     render() {
         return (
             <div className="ButtonGroupContainer">
-                <Button title="Acheivement Timeline" toolTip="Interactive time line of notable moments in my life." /> <Button title="Resume" toolTip="PDF copy of my resume." /> <Button title="How it's Made" toolTip="The process of making this site." />
+                <Button title="Acheivement Timeline" toolTip="Interactive time line of notable moments in my life." /> <Button title="Resume" toolTip="PDF copy of my resume." /> <Button title="Projects" toolTip="Notable Projects" />
             </div>
         );
     }

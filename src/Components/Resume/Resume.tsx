@@ -1,6 +1,5 @@
 import React from "react";
 import "./Resume.css"
-import Button from "../Button/Button";
 import PDF from "../../PDF/ErickWesleyEspinozaResume.pdf";
 
 type ResumeProps = {};
@@ -14,7 +13,7 @@ class Resume extends React.Component<ResumeProps, ResumeState> {
     render() {
         return (
             <div className="PDFContainer">
-                <iframe className="ResumePreview" src={PDF}></iframe>
+                <iframe title="Resume" className="ResumePreview" src={PDF}></iframe>
             </div>
         )
 

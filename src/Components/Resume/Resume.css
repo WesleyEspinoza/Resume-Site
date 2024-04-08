@@ -12,8 +12,8 @@
 .ResumePreview {
     display: flex;
     position: relative;
-    width: 800px;
-    height: 1090px;
+    width: 50%;
+    height: 1000px;
     text-align: center;
     margin: 10em auto;
     border-style: none;
