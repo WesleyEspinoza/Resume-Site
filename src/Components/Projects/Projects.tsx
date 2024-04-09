@@ -12,7 +12,7 @@ class Projects extends React.Component<ProjectsProps, ProjectsState> {
     render() {
         return (
             <div className="ProjectsContainer">
-
+                <h1 className="header">Projects</h1>
             </div>
         )
 

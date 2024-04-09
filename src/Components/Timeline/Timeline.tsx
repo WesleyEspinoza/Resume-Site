@@ -26,7 +26,6 @@ class Timeline extends React.Component<TimelineProps, TimelineState> {
     }
     componentDidMount(): void {
         this.getYears();
-        console.log(this.state.nodes)
     }
 
 
