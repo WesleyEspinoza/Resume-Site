@@ -1,9 +1,14 @@
+:root {
+  --font: "Serling Galleria";
+  --backgroundColor: #282c34;
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--backgroundColor);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,7 +20,8 @@
 
 p {
   font-size: 75px;
-  font-family: "Nanum Gothic";
+  font-family: var(--font);
+  font-weight: bold;
 }
 
 .SocialIconGroup {
