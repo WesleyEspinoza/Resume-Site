@@ -12,7 +12,7 @@ class Resume extends React.Component<ResumeProps, ResumeState> {
 
     render() {
         return (
-            <div className="PDFContainer">
+            <div className="PDFContainer" id="PDFContainer">
                 <iframe title="Resume" className="ResumePreview" src={PDF}></iframe>
             </div>
         )

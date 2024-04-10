@@ -23,9 +23,9 @@ function App() {
           </a>
         </div>
       </header>
-      <Resume />
       <Timeline />
       <Projects />
+      <Resume />
     </div >
   );
 }

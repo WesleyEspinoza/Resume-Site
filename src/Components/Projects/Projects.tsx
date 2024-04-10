@@ -13,10 +13,10 @@ class Projects extends React.Component<ProjectsProps, ProjectsState> {
 
     render() {
         return (
-            <div className="ProjectsContainer">
+            <div className="ProjectsContainer" id="ProjectsContainer">
                 <h1 className="header">Projects</h1>
                 {projectData.projects.map((project, index) => {
-                    return <Card title={project.title} />
+                    return <Card title={project.title} description={project.description} link={project.link} />
                 })
                 }
             </div >
