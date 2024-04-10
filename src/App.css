@@ -56,8 +56,11 @@ p {
   cursor: pointer;
 }
 
-img {
+.ProfileImg {
+  display: flex;
+  position: relative;
   border-radius: 50%;
+  top: 40px;
 }
 
 
@@ -114,7 +117,10 @@ img {
     cursor: pointer;
   }
 
-  img {
+  .ProfileImg {
+    display: flex;
+    position: relative;
     border-radius: 50%;
+    top: 0px;
   }
 }
