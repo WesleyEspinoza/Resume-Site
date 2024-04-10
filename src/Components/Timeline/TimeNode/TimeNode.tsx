@@ -11,9 +11,6 @@ class TimeNode extends React.Component<TimeNodeProps, TimeNodeState> {
     }
 
     getFact = (year: string) => {
-
-        console.log(process.env.REACT_APP_FACT_API_KEY)
-
         fetch(`${process.env.REACT_APP_FACT_API_URL}historicalevents?year=${year}`, {
             method: "GET",
             mode: 'cors',
