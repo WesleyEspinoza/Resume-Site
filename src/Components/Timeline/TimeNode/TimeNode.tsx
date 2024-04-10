@@ -12,14 +12,14 @@ class TimeNode extends React.Component<TimeNodeProps, TimeNodeState> {
 
     getFact = (year: string) => {
 
-        console.log(process.env.FACT_API_KEY)
+        console.log(process.env.REACT_APP_FACT_API_KEY)
 
         fetch(`https://api.api-ninjas.com/v1/historicalevents?year=${year}`, {
             method: "GET",
             mode: 'cors',
             headers: {
                 'Content-Type': "application/json",
-                'X-Api-Key': process.env.FACT_API_KEY!
+                'X-Api-Key': process.env.REACT_APP_FACT_API_KEY!
             },
         })
             .then(response => response.json())
