@@ -10,10 +10,21 @@ class Resume extends React.Component<ResumeProps, ResumeState> {
         this.state = state
     }
 
+    sharePDF = async () => {
+        if (navigator.share && navigator.canShare(PDF)) {
+            await navigator.share(PDF)
+        } else {
+            alert("Failed, Try again.")
+        }
+
+    }
+
     render() {
         return (
             <div className="PDFContainer" id="PDFContainer">
+
                 <iframe title="Resume" className="ResumePreview" src={PDF}></iframe>
+                <button className="PDFDownload" onClick={this.sharePDF}>Share & download</button>
             </div>
         )
 

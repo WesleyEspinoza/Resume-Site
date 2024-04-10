@@ -98,7 +98,7 @@ class Timeline extends React.Component<TimelineProps, TimelineState> {
 
     render() {
         return (
-            <div className="TimelineContainer">
+            <div className="TimelineContainer" id="TimelineContainer">
                 <div className="Timeline">
                     <div className="DottedLine" />
                     {this.state.nodes.map((node, index) => {

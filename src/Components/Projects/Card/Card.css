@@ -5,16 +5,17 @@
     border-width: 2px;
     border-style: solid;
     border-radius: 4px;
-    width: 30em;
-    height: 250px;
+    width: 15em;
+    height: fit-content;
     margin: 0 auto;
     margin-bottom: 5px;
+    margin-right: 30%;
     text-align: left;
     background-color: white;
 }
 
 .cardContainer:nth-child(even) {
-    margin-left: 50%;
+    margin-left: 30%;
 }
 
 .title {
@@ -44,4 +45,56 @@
     border-style: none;
     filter: invert();
     cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+    .cardContainer {
+        display: flex;
+        position: relative;
+        padding: 15px;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 4px;
+        width: 30em;
+        height: 250px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        text-align: left;
+        background-color: white;
+    }
+
+    .cardContainer:nth-child(even) {
+        margin-left: 50%;
+    }
+
+    .title {
+        display: flex;
+        position: relative;
+        top: -15px;
+        margin-bottom: 0px;
+    }
+
+    .description {
+        display: flex;
+        position: relative;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .githubButton {
+        display: flex;
+        position: absolute;
+        background-image: url("../../../Images//Github.png");
+        height: 50px;
+        width: 50px;
+        right: 5px;
+        bottom: 5px;
+        margin-top: 40px;
+        background-color: transparent;
+        border-style: none;
+        filter: invert();
+        cursor: pointer;
+    }
 }

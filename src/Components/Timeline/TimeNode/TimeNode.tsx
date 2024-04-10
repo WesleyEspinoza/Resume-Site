@@ -31,10 +31,10 @@ class TimeNode extends React.Component<TimeNodeProps, TimeNodeState> {
 
     renderFact = () => {
         if (this.state.funFact === "" || this.state.funFact === undefined) {
-            return <></>
+            return <div></div>
         } else {
-            return <><div className="FunFactDate"> {`Date: ${this.state.factMonth} - ${this.state.factDay} - ${this.state.factYear}`} </div>
-                <div className="FunFact"> {this.state.funFact} </div></>
+            return <div><div className="FunFactDate"> {`Date: ${this.state.factMonth} - ${this.state.factDay} - ${this.state.factYear}`} </div>
+                <div className="FunFact"> {this.state.funFact} </div></div>
         }
     }
 
