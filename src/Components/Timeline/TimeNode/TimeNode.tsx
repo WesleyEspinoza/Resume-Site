@@ -11,20 +11,19 @@ class TimeNode extends React.Component<TimeNodeProps, TimeNodeState> {
     }
 
     getFact = (year: string) => {
-        const myHeaders = new Headers();
-        myHeaders.append("X-Api-Key", process.env.FACT_API_KEY!);
-        myHeaders.append("Content-Type", "application/json");
 
-        fetch(`https://api.api-ninjas.com/v1/historicalevents?text=${year}`, {
+        fetch(`https://api.api-ninjas.com/v1/historicalevents?year=${year}`, {
             method: "GET",
-            headers: myHeaders,
-            credentials: "include", // Include cookies (if needed)
+            mode: 'cors',
+            headers: {
+                'Content-Type': "application/json",
+                'X-Api-Key': process.env.FACT_API_KEY!
+            },
         })
             .then(response => response.json())
             .then(data => {
                 const fact = data[Math.floor(Math.random() * data.length)]
-                this.setState({ ...this.state, funFact: fact });
-                console.log(this.state.funFact)
+                this.setState({ ...this.state, funFact: fact.event });
             })
             .catch(error => {
                 // Handle errors
@@ -40,7 +39,7 @@ class TimeNode extends React.Component<TimeNodeProps, TimeNodeState> {
                     <div className="OuterDot" />
                     <h1 className="Date">{this.props.date}</h1>
                     <div className="Text"> {this.props.text} </div>
-                    <button onClick={() => this.getFact(this.props.date)}>{`${this.state.funFact}`}</button>
+                    <button onClick={() => this.getFact(this.props.date)}>{`Generate event that happened at some point in ${this.props.date}`}</button>
                     <div className="FunFact"> {this.state.funFact} </div>
                 </div>
             </div >
