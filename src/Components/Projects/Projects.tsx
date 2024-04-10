@@ -1,5 +1,7 @@
 import React from "react";
 import "./Projects.css"
+import projectData from "./ProjectData/ProjectData.json"
+import Card from "./Card/Card";
 
 type ProjectsProps = {};
 type ProjectsState = {};
@@ -13,7 +15,11 @@ class Projects extends React.Component<ProjectsProps, ProjectsState> {
         return (
             <div className="ProjectsContainer">
                 <h1 className="header">Projects</h1>
-            </div>
+                {projectData.projects.map((project, index) => {
+                    return <Card title={project.title} />
+                })
+                }
+            </div >
         )
 
     }

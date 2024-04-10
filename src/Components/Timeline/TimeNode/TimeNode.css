@@ -11,6 +11,7 @@
     flex-direction: column;
     width: 100%;
     z-index: 2;
+    text-align: center;
 }
 
 .InnerDot {
@@ -53,6 +54,37 @@
     position: relative;
     width: fit-content;
     font-family: var(--font);
-    left: 110px;
+    left: 100px;
     top: -110px;
+}
+
+.FunFactDate {
+    display: flex;
+    position: relative;
+    left: 100px;
+    top: -80px;
+    font-family: var(--font);
+    font-weight: bolder;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.FunFact {
+    display: flex;
+    position: relative;
+    left: 100px;
+    top: -85px;
+    font-family: var(--font);
+}
+
+.factButton {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+    padding: 15px;
+    border-width: 1px;
+    border-radius: 4px;
 }
