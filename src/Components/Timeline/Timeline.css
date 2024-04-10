@@ -18,6 +18,7 @@
     margin: 0 auto;
     padding: 6em;
     row-gap: 100px;
+    text-align: center;
 }
 
 
@@ -30,4 +31,12 @@
     left: 157px;
     border-left: 2px dotted #444;
     z-index: 1;
+}
+
+button {
+    display: flex;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
 }
