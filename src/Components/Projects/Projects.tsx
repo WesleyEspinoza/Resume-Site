@@ -16,7 +16,7 @@ class Projects extends React.Component<ProjectsProps, ProjectsState> {
             <div className="ProjectsContainer" id="ProjectsContainer">
                 <h1 className="header">Projects</h1>
                 {projectData.projects.map((project, index) => {
-                    return <Card title={project.title} description={project.description} link={project.link} />
+                    return <Card title={project.title} key={index} description={project.description} link={project.link} />
                 })
                 }
             </div >

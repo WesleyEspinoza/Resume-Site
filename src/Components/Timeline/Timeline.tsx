@@ -88,13 +88,12 @@ class Timeline extends React.Component<TimelineProps, TimelineState> {
                     break;
             }
             year++;
-
         }
     }
+
     componentDidMount(): void {
         this.getYears();
     }
-
 
     render() {
         return (
