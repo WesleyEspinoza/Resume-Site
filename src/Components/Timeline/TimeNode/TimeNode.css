@@ -46,7 +46,7 @@
     font-family: var(--font);
     font-size: 25px;
     z-index: 9;
-    width: fit-content;
+    width: 100px;
 }
 
 .Text {
@@ -56,6 +56,7 @@
     font-family: var(--font);
     left: 100px;
     top: -110px;
+    width: 300px;
 }
 
 .FunFactDate {
@@ -75,6 +76,7 @@
     left: 100px;
     top: -85px;
     font-family: var(--font);
+    width: 200px;
 }
 
 .factButton {
@@ -87,6 +89,7 @@
     padding: 15px;
     border-width: 1px;
     border-radius: 4px;
+    width: 250px;
 }
 
 @media only screen and (min-width: 500px) {
