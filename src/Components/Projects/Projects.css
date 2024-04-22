@@ -5,6 +5,7 @@
     height: fit-content;
     background-color: #282c34;
     text-align: center;
+    border-style: none;
 }
 
 .header {

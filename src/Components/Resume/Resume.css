@@ -11,7 +11,7 @@
 }
 
 .ResumePreview {
-    display: flex;
+    display: none;
     position: relative;
     width: 95%;
     height: 800px;

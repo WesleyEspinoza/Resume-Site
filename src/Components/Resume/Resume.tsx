@@ -25,7 +25,7 @@ class Resume extends React.Component<ResumeProps, ResumeState> {
 
                 <iframe title="Resume" className="ResumePreview" src={PDF}></iframe>
                 <a href={PDF}>
-                    <button className="PDFDownload">Share & download</button>
+                    <button className="PDFDownload">Download Resume</button>
                 </a>
 
             </div>

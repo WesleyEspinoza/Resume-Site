@@ -40,3 +40,10 @@ h2 {
 .ButtonContainer:hover .ToolTip {
     display: flex;
 }
+
+.title {
+    display: flex;
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+}
