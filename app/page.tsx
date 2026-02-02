@@ -165,18 +165,10 @@ export default function Home() {
             </Section>
           </div>
 
-          {/* RIGHT SIDEBAR AD (Desktop Only, Sticky) */}
-          <div className="hidden lg:block lg:w-[180px] xl:w-[220px] sticky top-6">
-            <AdPlaceholder type="sidebar" />
-          </div>
-
           {/* 
           Mobile-only top banner ad.
           Hidden on desktop or larger screens via Tailwind's lg:hidden utility.
         */}
-          <div className="lg:hidden mb-6">
-            <AdPlaceholder type="banner" />
-          </div>
         </div>
       </main>
     </>
