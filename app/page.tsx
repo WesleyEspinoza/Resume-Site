@@ -20,10 +20,7 @@ export default function Home() {
         */}
         <div className="flex flex-col lg:flex-row lg:items-start gap-6">
 
-          {/* LEFT SIDEBAR AD (Desktop Only, Sticky) */}
-          <div className="hidden lg:block lg:w-[180px] xl:w-[220px] sticky top-6">
-            <AdPlaceholder type="sidebar" />
-          </div>
+
 
           {/* MAIN CONTENT AREA */}
           <div className="flex-1 w-full max-w-4xl mx-auto">
