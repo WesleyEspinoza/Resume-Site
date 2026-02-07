@@ -1,9 +1,10 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Erick W. Espinoza — Resume",
+  title: "E. Wesley Espinoza — Resume",
   description:
     "IT professional, software engineer, and ethical tech advocate.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
@@ -23,7 +24,10 @@ export default function RootLayout({
         />
         {/* Any other global tags like analytics can go here */}
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

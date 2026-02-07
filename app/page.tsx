@@ -2,7 +2,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import AdPlaceholder from "@/components/AdPlaceholder";
 
 export default function Home() {
   return (
@@ -33,7 +32,7 @@ export default function Home() {
               className="mb-14 sm:mb-16"
             >
               <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-zinc-800 dark:text-zinc-50">
-                Erick W. Espinoza
+                E. Wesley Espinoza
               </h1>
 
               <p className="mt-3 text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-xl">
